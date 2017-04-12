@@ -1,5 +1,5 @@
 var katescript = {
-    "author": "Brian Donovan",
+    "author": "Brian Donovan (eatdirtshit.rocks)",
     "license": "BSD",
     "revision": 1,
     "kate-version": "0",
