@@ -26,7 +26,7 @@ require ("range.js");
 
 function rtnStrYYMMDDdatestamp(objDateTime){
     var str4digitYear = objDateTime.getUTCFullYear().toString();
-    var str2digitMonth = objDateTime.getUTCMonth().toString();
+    var str2digitMonth = (objDateTime.getUTCMonth()+1).toString();
     if (str2digitMonth.length === 1) {
         str2digitMonth = '0' + str2digitMonth;
     }
