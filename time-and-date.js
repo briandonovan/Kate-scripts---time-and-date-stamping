@@ -48,16 +48,8 @@ function insertYYMMDDdatestamp(){
 }
 
 function rtnStrHHMMTimestamp(objDateTime){
-    var str2digitHours = objDateTime.getUTCHours().toString();
-    if (str2digitHours.length === 1) {
-        str2digitHours = '0' + str2digitHours;
-    }
-    var str2digitMinutes = objDateTime.getUTCMinutes().toString();
-    if (str2digitMinutes.length === 1) {
-        str2digitMinutes = '0' + str2digitMinutes;
-    }
-    var strTimestamp = str2digitHours+':'+str2digitMinutes;
-    return strTimestamp;
+    var str2digitHours = objDateTime.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+    return str2digitHours;
 }
 
 function insertYYMMDDhhmmdatestamp(){
